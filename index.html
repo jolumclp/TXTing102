@@ -94,6 +94,14 @@
       white-space: nowrap;
     }
 
+    .content-warning {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      color: #856404;
+    }
+
     .label { font-weight: 600; font-size: 1rem; }
 
     .chevron {
@@ -118,6 +126,12 @@
   </style>
 </head>
 <body>
+  <aside class="content-warning" role="region" aria-label="Content Warning">
+    <div class="cw-content">
+      <strong>⚠️ Content Warning:</strong> The TXT records in the cluster maps contain insults and references to pornographic content.
+      <a href="#main-content" class="skip-link">Skip to content</a>
+    </div>
+  </aside>
   <main>
     <h1>Clustering Results</h1>
     <p class="subtitle">Interactive Cluster Graphs for the paper "TXTing 102: Finding Meaning in the Unexplored Part of the DNS TXT Record Space"</p>
